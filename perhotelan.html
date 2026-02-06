@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Perhotelan - LPK Mitra Sauri</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="perhotelan.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#home">
+                <img src="asset/msuri.png" alt="Logo LPK MITRA SAURI" class="logo" width="50">
+                YAYASAN MITRA SAURI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Program Perhotelan</h1>
+                <p class="hero-subtitle">
+                    Raih kesempatan berkarir di industri hospitality global dengan pelatihan berkualitas tinggi dan
+                    sertifikasi internasional
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Program Spesialisasi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Alumni Sukses</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Tingkat Penempatan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pilih Program Spesialisasi Anda</h2>
+                <p class="section-subtitle">
+                    Temukan program pelatihan yang sesuai dengan minat dan bakat Anda untuk memulai karir cemerlang di
+                    industri perhotelan
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Food Product -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card" data-bs-toggle="modal" data-bs-target="#modalFoodProduct">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop"
+                            alt="Food Product" class="program-image">
+                        <div class="program-content">
+                            <div class="program-icon-wrapper">
+                                <i class="bi bi-egg-fried"></i>
+                            </div>
+                            <h3 class="program-title">Food Product (Cookery)</h3>
+                            <p class="program-description">Master culinary arts dengan teknik memasak profesional dan
+                                manajemen dapur modern</p>
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Sertifikasi BNSP</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Praktek Kitchen Intensive</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Job Placement Guarantee</span>
+                                </div>
+                            </div>
+                            <button class="btn-detail">
+                                Lihat Detail <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- F&B Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card" data-bs-toggle="modal" data-bs-target="#modalFBService">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
+                            alt="F&B Service" class="program-image">
+                        <div class="program-content">
+                            <div class="program-icon-wrapper">
+                                <i class="bi bi-cup-hot"></i>
+                            </div>
+                            <h3 class="program-title">Food & Beverage Service</h3>
+                            <p class="program-description">Kuasai seni pelayanan restoran dan banquet dengan standar
+                                internasional</p>
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Table Setting Mastery</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Customer Service Excellence</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Banquet Operations</span>
+                                </div>
+                            </div>
+                            <button class="btn-detail">
+                                Lihat Detail <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Housekeeping -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card" data-bs-toggle="modal" data-bs-target="#modalHousekeeping">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop"
+                            alt="Housekeeping" class="program-image">
+                        <div class="program-content">
+                            <div class="program-icon-wrapper">
+                                <i class="bi bi-house-check"></i>
+                            </div>
+                            <h3 class="program-title">Housekeeping</h3>
+                            <p class="program-description">Pelajari standar kebersihan hotel dan room preparation kelas
+                                dunia</p>
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Room Preparation Expert</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Hygiene Standards</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Public Area Maintenance</span>
+                                </div>
+                            </div>
+                            <button class="btn-detail">
+                                Lihat Detail <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Front Office -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="program-card" data-bs-toggle="modal" data-bs-target="#modalFrontOffice">
+                        <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=800&h=600&fit=crop"
+                            alt="Front Office" class="program-image">
+                        <div class="program-content">
+                            <div class="program-icon-wrapper">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+                            <h3 class="program-title">Front Office</h3>
+                            <p class="program-description">Menjadi wajah hotel dengan keahlian reception dan guest
+                                relations terbaik</p>
+                            <div class="program-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Guest Check-in/Out System</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Reservation Management</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Communication Skills</span>
+                                </div>
+                            </div>
+                            <button class="btn-detail">
+                                Lihat Detail <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Food Product -->
+    <div class="modal fade" id="modalFoodProduct" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <div class="modal-icon">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                        Food Product (Cookery)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-section">
+                        <h5><i class="bi bi-info-circle"></i> Deskripsi Program</h5>
+                        <p>Program Food Product (Cookery) dirancang untuk menghasilkan chef profesional yang menguasai
+                            berbagai teknik memasak, mulai dari basic hingga advanced level. Anda akan belajar langsung
+                            dengan instruktur berpengalaman dan praktek di kitchen facility modern.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-list-check"></i> Kurikulum Pelatihan</h5>
+                        <ul class="curriculum-list">
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penerapan K3, Higiene & Sanitasi Dapur
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Persiapan & Pengolahan Bahan Makanan (Preparation & Basic Cooking)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Pengolahan Hidangan Pembuka, Utama, dan Penutup
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Pengolahan Masakan Indonesia & Internasional Dasar
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Teknik Dasar Pastry & Bakery
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penyajian Hidangan Sesuai Standar Industri (Plating & Portioning)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penggunaan Peralatan & Mesin Dapur Profesional
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Kerja Tim & Etika Kerja di Lingkungan Dapur Hotel
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-trophy"></i> Keunggulan Program</h5>
+                        <div class="benefit-grid">
+                            <div class="benefit-card">
+                                <i class="bi bi-patch-check"></i>
+                                <h6>Sertifikasi BNSP</h6>
+                                <p>Sertifikat kompetensi nasional yang diakui industri</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-tools"></i>
+                                <h6>Fasilitas Lengkap</h6>
+                                <p>Training kitchen dengan equipment standar hotel bintang 5</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-people"></i>
+                                <h6>Instruktur Expert</h6>
+                                <p>Dibimbing chef profesional berpengalaman internasional</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-briefcase"></i>
+                                <h6>Job Placement</h6>
+                                <p>Jaminan penempatan kerja di hotel & restoran terkemuka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-compass"></i> Prospek Karir</h5>
+                        <div class="career-tags">
+                            <span class="career-tag">Commis Chef</span>
+                            <span class="career-tag">Chef de Partie</span>
+                            <span class="career-tag">Sous Chef</span>
+                            <span class="career-tag">Pastry Chef</span>
+                            <span class="career-tag">Kitchen Supervisor</span>
+                            <span class="career-tag">Executive Chef</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-custom">
+                        <i class="bi bi-whatsapp me-2"></i> Daftar Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal F&B Service -->
+    <div class="modal fade" id="modalFBService" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <div class="modal-icon">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+                        Food & Beverage Service
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-section">
+                        <h5><i class="bi bi-info-circle"></i> Deskripsi Program</h5>
+                        <p>Program F&B Service mempersiapkan Anda menjadi profesional di bidang pelayanan makanan dan
+                            minuman dengan standar internasional. Kuasai teknik service, table manner, hingga wine
+                            knowledge untuk berkarir di restaurant dan hotel mewah.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-list-check"></i> Kurikulum Pelatihan</h5>
+                        <ul class="curriculum-list">
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penerapan K3, Higiene & Sanitasi Area Food & Beverage
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Persiapan Area Layanan (Restaurant & Banquet Preparation)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Teknik Pelayanan Makanan & Minuman (Food & Beverage Service)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Table Setting & Standard Pelayanan Tamu
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penanganan Pesanan & Penyajian Sesuai Prosedur Hotel
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Etika, Komunikasi & Sikap Profesional Waiter / Waitress
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-trophy"></i> Keunggulan Program</h5>
+                        <div class="benefit-grid">
+                            <div class="benefit-card">
+                                <i class="bi bi-award"></i>
+                                <h6>Sertifikasi Resmi</h6>
+                                <p>Sertifikat BNSP bidang F&B Service</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-globe"></i>
+                                <h6>Standar Internasional</h6>
+                                <p>Materi sesuai standar hotel global</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-person-check"></i>
+                                <h6>Soft Skills Training</h6>
+                                <p>Communication & grooming excellence</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-graph-up"></i>
+                                <h6>Career Growth</h6>
+                                <p>Peluang karir cemerlang di industri hospitality</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-compass"></i> Prospek Karir</h5>
+                        <div class="career-tags">
+                            <span class="career-tag">Waiter/Waitress</span>
+                            <span class="career-tag">Captain</span>
+                            <span class="career-tag">Bartender</span>
+                            <span class="career-tag">Restaurant Supervisor</span>
+                            <span class="career-tag">F&B Manager</span>
+                            <span class="career-tag">Banquet Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-custom">
+                        <i class="bi bi-whatsapp me-2"></i> Daftar Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Housekeeping -->
+    <div class="modal fade" id="modalHousekeeping" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <div class="modal-icon">
+                            <i class="bi bi-house-check"></i>
+                        </div>
+                        Housekeeping
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-section">
+                        <h5><i class="bi bi-info-circle"></i> Deskripsi Program</h5>
+                        <p>Program Housekeeping melatih Anda menjadi ahli dalam menjaga kebersihan dan kenyamanan kamar
+                            hotel sesuai standar internasional. Pelajari teknik room preparation, public area
+                            maintenance, dan manajemen housekeeping department.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-list-check"></i> Kurikulum Pelatihan</h5>
+                        <ul class="curriculum-list">
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penerapan K3, Higiene & Keselamatan Kerja Housekeeping
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Prosedur Pembersihan Kamar Tamu (Guest Room Cleaning)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penataan Tempat Tidur & Linen (Bed Making & Linen Handling)
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Pembersihan Area Publik & Back of House
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Penggunaan Peralatan & Bahan Pembersih Housekeeping
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                Pelayanan Tamu & Etika Kerja Petugas Housekeeping
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-trophy"></i> Keunggulan Program</h5>
+                        <div class="benefit-grid">
+                            <div class="benefit-card">
+                                <i class="bi bi-stars"></i>
+                                <h6>5-Star Standards</h6>
+                                <p>Pelatihan dengan standar hotel bintang 5</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-clipboard-check"></i>
+                                <h6>Hands-on Practice</h6>
+                                <p>Praktek langsung dengan room mockup</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-shield-check"></i>
+                                <h6>Safety Protocol</h6>
+                                <p>Standar keselamatan kerja internasional</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-speedometer2"></i>
+                                <h6>Efficiency Training</h6>
+                                <p>Teknik bekerja cepat dan efisien</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-compass"></i> Prospek Karir</h5>
+                        <div class="career-tags">
+                            <span class="career-tag">Room Attendant</span>
+                            <span class="career-tag">Public Area Attendant</span>
+                            <span class="career-tag">Floor Supervisor</span>
+                            <span class="career-tag">Housekeeping Supervisor</span>
+                            <span class="career-tag">Asst. Housekeeper</span>
+                            <span class="career-tag">Executive Housekeeper</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-custom">
+                        <i class="bi bi-whatsapp me-2"></i> Daftar Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Front Office -->
+    <div class="modal fade" id="modalFrontOffice" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <div class="modal-icon">
+                            <i class="bi bi-person-workspace"></i>
+                        </div>
+                        Front Office
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-section">
+                        <h5><i class="bi bi-info-circle"></i> Deskripsi Program</h5>
+                        <p>Program Front Office mempersiapkan Anda menjadi wajah hotel yang profesional dan ramah.
+                            Kuasai sistem reservasi, check-in/out procedures, guest relations, dan operasional front
+                            desk untuk memberikan first impression terbaik bagi tamu hotel.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-list-check"></i> Kurikulum Pelatihan</h5>
+                        <ul class="curriculum-list">
+                            <li><i class="bi bi-chevron-right"></i> Pengenalan Operasional Front Office Hotel</li>
+                            <li><i class="bi bi-chevron-right"></i> Prosedur Check-in & Check-out Tamu</li>
+                            <li><i class="bi bi-chevron-right"></i> Pelayanan Reservasi & Administrasi Tamu</li>
+                            <li><i class="bi bi-chevron-right"></i> Penanganan Keluhan & Komunikasi Layanan Tamu</li>
+                            <li><i class="bi bi-chevron-right"></i> Etika, Grooming & Profesionalisme Frontliner</li>
+                            <li><i class="bi bi-chevron-right"></i> Penggunaan Sistem & Dokumen Front Office</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-trophy"></i> Keunggulan Program</h5>
+                        <div class="benefit-grid">
+                            <div class="benefit-card">
+                                <i class="bi bi-laptop"></i>
+                                <h6>PMS Training</h6>
+                                <p>Praktik dengan sistem hotel terkini</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-chat-dots"></i>
+                                <h6>Communication Skills</h6>
+                                <p>Pelatihan bahasa Inggris & etika berkomunikasi</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-star"></i>
+                                <h6>Guest Experience</h6>
+                                <p>Fokus pada kepuasan tamu hotel</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="bi bi-headset"></i>
+                                <h6>Problem Solving</h6>
+                                <p>Handling komplain & service recovery</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h5><i class="bi bi-compass"></i> Prospek Karir</h5>
+                        <div class="career-tags">
+                            <span class="career-tag">Receptionist</span>
+                            <span class="career-tag">Guest Service Agent</span>
+                            <span class="career-tag">Reservation Agent</span>
+                            <span class="career-tag">Front Desk Supervisor</span>
+                            <span class="career-tag">Front Office Manager</span>
+                            <span class="career-tag">Guest Relations Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-custom">
+                        <i class="bi bi-whatsapp me-2"></i> Daftar Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

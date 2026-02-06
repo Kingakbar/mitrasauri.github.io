@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAYASAN MITRA SAURI - Lembaga Pelatihan Kerja Profesional</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="asset/msuri.png" alt="Logo LPK MITRA SAURI" class="logo" width="50">
+                YAYASAN MITRA SAURI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 hero-content mt-4">
+                    <h1 class="hero-title">Wujudkan Karir Impian Anda Bersama LPK MITRA SAURI</h1>
+                    <p class="hero-subtitle">Lembaga pelatihan kerja profesional dengan program berkualitas untuk
+                        mengembangkan kompetensi di bidang perhotelan, kuliner, dan bahasa internasional</p>
+                    <button class="btn btn-cta"
+                        onclick="document.getElementById('program').scrollIntoView({behavior: 'smooth'})">
+                        Lihat Program Kami <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-12 hero-image text-center">
+                    <div id="heroLottie" style="max-width: 500px; margin: auto;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="text-center mb-5">
+
+                <p class="section-subtitle">Bekerja sama dengan perusahaan terkemuka untuk peluang karir terbaik</p>
+            </div>
+
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <img src="asset/anara.png" alt="Marriott">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/flamingo.png" alt="Hilton">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/grandcentral.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/grandkanaya.png" alt="Accor">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/harpper.png" alt="IHG">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/hometon.png" alt="Marriott">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/ixora.png" alt="Hilton">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/jwmarriot.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/kinta riverftont.png" alt="Hyatt">
+                </div>
+
+                <div class="partner-logo">
+                    <img src="asset/pintar.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/poloniahotel.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/putramulia.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/red rock hotel.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/scott.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/singaporehotel.png" alt="Hyatt">
+                </div>
+                <div class="partner-logo">
+                    <img src="asset/sunway hotel.png" alt="Hyatt">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h2 class="section-title-tentang">Tentang Kami</h2>
+                    <p class="section-subtitle">Mitra Terpercaya untuk Pengembangan Karir Anda</p>
+                    <p class="text-muted mb-4" style="line-height: 1.8;">
+                        LPK MITRA SAURI adalah lembaga pelatihan kerja yang berkomitmen untuk menghasilkan tenaga kerja
+                        profesional dan kompeten. Dengan pengalaman bertahun-tahun, kami telah meluluskan ribuan peserta
+                        yang kini berkarir di berbagai industri hospitality dan jasa di dalam maupun luar negeri.
+                    </p>
+                    <p class="text-muted" style="line-height: 1.8;">
+                        Kami menyediakan program pelatihan yang terstruktur, instruktur berpengalaman, serta fasilitas
+                        modern untuk memastikan setiap peserta mendapatkan pembelajaran yang optimal dan siap bersaing
+                        di dunia kerja.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded">
+                                <h3 class="fw-bold" style="color: var(--secondary-color); font-size: 2.5rem;">1000+</h3>
+                                <p class="mb-0 text-muted">Lulusan Sukses</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded">
+                                <h3 class="fw-bold" style="color: var(--secondary-color); font-size: 2.5rem;">15+</h3>
+                                <p class="mb-0 text-muted">Tahun Pengalaman</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded">
+                                <h3 class="fw-bold" style="color: var(--secondary-color); font-size: 2.5rem;">6</h3>
+                                <p class="mb-0 text-muted">Program Unggulan</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded">
+                                <h3 class="fw-bold" style="color: var(--secondary-color); font-size: 2.5rem;">95%</h3>
+                                <p class="mb-0 text-muted">Tingkat Penempatan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="program" class="programs-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="section-title">Program Pelatihan Kami</h2>
+                <p class="section-subtitle">
+                    Program berbasis kompetensi untuk menyiapkan Anda siap kerja di industri profesional
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Perhotelan -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h5 class="card-title">Perhotelan</h5>
+                            <p class="card-text">
+                                Pelatihan berbasis standar industri untuk mencetak tenaga profesional
+                                perhotelan yang siap kerja dan berdaya saing.
+                            </p>
+                            <a href="perhotelan.html" class="btn btn-outline-primary mt-3 program-detail"
+                                data-program="perhotelan">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restoran -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <h5 class="card-title">Restoran</h5>
+                            <p class="card-text">
+                                Program pelatihan food service dan operasional restoran
+                                dengan praktik langsung di lingkungan profesional.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-3 program-detail" data-program="restoran">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bar -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-cup-straw"></i>
+                            </div>
+                            <h5 class="card-title">Bar</h5>
+                            <p class="card-text">
+                                Pelatihan bartending dan beverage service untuk membentuk
+                                bartender profesional bersertifikat.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-3 program-detail" data-program="bar">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MICE -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                            </div>
+                            <h5 class="card-title">MICE</h5>
+                            <p class="card-text">
+                                Pelatihan Meeting, Incentive, Convention, dan Exhibition
+                                untuk manajemen event skala nasional dan internasional.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-3 program-detail" data-program="mice">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bahasa Inggris -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-translate"></i>
+                            </div>
+                            <h5 class="card-title">Bahasa Inggris</h5>
+                            <p class="card-text">
+                                Program Bahasa Inggris khusus hospitality dan bisnis
+                                untuk meningkatkan kemampuan komunikasi internasional.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-3 program-detail" data-program="english">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bahasa Mandarin -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card program-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-chat-quote"></i>
+                            </div>
+                            <h5 class="card-title">Bahasa Mandarin</h5>
+                            <p class="card-text">
+                                Pelatihan Bahasa Mandarin dari dasar hingga lanjutan
+                                untuk kebutuhan profesional dan industri pariwisata.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary mt-3 program-detail" data-program="mandarin">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Galeri Kegiatan</h2>
+                <p class="section-subtitle">Dokumentasi kegiatan pelatihan dan pencapaian peserta kami</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://lh3.googleusercontent.com/proxy/847sKUiJlySfwO9xdJnIpT-4XfvOS76Ej7jJMSqAx4NmSN2uMXE4ztPqyzWE49XybCqmLE9T78Wpr0TfKL6NI9KDqyfzyGLJISdhyKLqwzapPrqmtTovOXa1NDeQFjI_PdzXXvBIyh95E9K1m9fvRQ2f8WlFgk8EHjWE0g=s680-w680-h510-rw"
+                        alt="Pelatihan Perhotelan">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Pelatihan Perhotelan</h5>
+                        <p class="gallery-desc">Praktik housekeeping dan room service</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepZqWejS7edwRBuQ-Pz454dd0hE-ixaonzs4F7yXmZAPZMzj4GwQxogb-tZsIX_Mdx6vo_Q0E3ucCh7prtGinMsTVQEuqGXHMMLoNGDL44fom94c7hecKTD5hvLFYZ-DWBks-5N=s680-w680-h510-rw"
+                        alt="Pelatihan Restoran">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Pelatihan Restoran</h5>
+                        <p class="gallery-desc">Table setting dan food service training</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweq2EZslyKJBStD5K-EfbQvuCmaOY81IuJpXiBFGxdwxFouI_llQJIut115CO4BhUNivjaVewPd4AgxRrQOV3m4xtZJ3I5iveT_ceXwYVdO5w8Lmk7Ah5C_Fc6wSrILQ4qmEr4E=s680-w680-h510-rw"
+                        alt="Bartending Class">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Bartending Class</h5>
+                        <p class="gallery-desc">Praktik cocktail mixing dan presentation</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepSpzDiI6m2Jno93sTIOmER_debYNbGCB8TfHCenl1fHvDsf2Q9lD34ZIRriA0spI2GTUZV8qsRw4Ug1y4ASSQXyeCpAZXcNWl5eO2KQxFfVkJXLazjvaXSBDt13acyliJz3N0J=s680-w680-h510-rw"
+                        alt="Kelas Bahasa">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Kelas Bahasa</h5>
+                        <p class="gallery-desc">Pelatihan bahasa Inggris dan Mandarin</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerkY2dQUK-lucDmJtcZgoD1KNP-0h0FtxvhAN8ugYr8XsGphG_4cuP5D9n7w66cVUPWm5bmq2v0Y1iGA_7v3gcmMOjcgIz5QEwnr6WjhJ72vmR9VrCDimClpEHOdwlpJXDcC8xSYQ=s680-w680-h510-rw"
+                        alt="Wisuda Peserta">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Wisuda Peserta</h5>
+                        <p class="gallery-desc">Kelulusan batch ke-45</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=400&fit=crop"
+                        alt="Fasilitas Training">
+                    <div class="gallery-overlay">
+                        <h5 class="gallery-title">Fasilitas Training</h5>
+                        <p class="gallery-desc">Ruang kelas modern dan nyaman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Testimoni Alumni</h2>
+                <p class="section-subtitle">Apa kata mereka yang telah bergabung bersama kami</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siti Nurhaliza">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Pelatihan di LPK MITRA SAURI sangat profesional. Saya sekarang
+                                bekerja di hotel bintang 5 berkat ilmu yang saya dapatkan di sini. Instruktur sangat
+                                berpengalaman!"</p>
+                            <h6 class="testimonial-name">Siti Nurhaliza</h6>
+                            <p class="testimonial-position">Front Office Staff - Marriott Hotel</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi Santoso">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Program bartending-nya luar biasa! Praktik langsung dengan
+                                peralatan modern. Sekarang saya bekerja sebagai head bartender di restoran terkenal."
+                            </p>
+                            <h6 class="testimonial-name">Budi Santoso</h6>
+                            <p class="testimonial-position">Head Bartender - The Ritz Carlton</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dewi Lestari">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Kursus bahasa Inggris dan Mandarin sangat membantu karir saya.
+                                Metode pengajarannya efektif dan aplikatif untuk dunia hospitality."</p>
+                            <h6 class="testimonial-name">Dewi Lestari</h6>
+                            <p class="testimonial-position">Guest Relations - Hyatt Regency</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Ahmad Rizki">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Fasilitas lengkap, materi up to date, dan yang terpenting ada
+                                program job placement. Terima kasih LPK MITRA SAURI!"</p>
+                            <h6 class="testimonial-name">Ahmad Rizki</h6>
+                            <p class="testimonial-position">Restaurant Manager - Hilton Garden Inn</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Rina Kartika">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Pelatihan MICE sangat komprehensif. Saya mendapat banyak
+                                pengalaman praktis yang sangat berguna di pekerjaan saya sekarang."</p>
+                            <h6 class="testimonial-name">Rina Kartika</h6>
+                            <p class="testimonial-position">Event Coordinator - Grand Hyatt</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Andi Wijaya">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Instruktur yang berpengalaman dan suasana belajar yang
+                                kondusif. Highly recommended untuk yang ingin berkarir di hospitality!"</p>
+                            <h6 class="testimonial-name">Andi Wijaya</h6>
+                            <p class="testimonial-position">Housekeeping Supervisor - InterContinental</p>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siti Nurhaliza">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Pelatihan di LPK MITRA SAURI sangat profesional. Saya sekarang
+                                bekerja di hotel bintang 5 berkat ilmu yang saya dapatkan di sini. Instruktur sangat
+                                berpengalaman!"</p>
+                            <h6 class="testimonial-name">Siti Nurhaliza</h6>
+                            <p class="testimonial-position">Front Office Staff - Marriott Hotel</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi Santoso">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Program bartending-nya luar biasa! Praktik langsung dengan
+                                peralatan modern. Sekarang saya bekerja sebagai head bartender di restoran terkenal."
+                            </p>
+                            <h6 class="testimonial-name">Budi Santoso</h6>
+                            <p class="testimonial-position">Head Bartender - The Ritz Carlton</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Keunggulan Kami</h2>
+                <p class="section-subtitle">Mengapa memilih LPK MITRA SAURI?</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h6 class="feature-title">Bersertifikat Resmi</h6>
+                        <p class="feature-text">Sertifikat pelatihan yang diakui industri dan pemerintah</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h6 class="feature-title">Instruktur Berpengalaman</h6>
+                        <p class="feature-text">Tenaga pengajar profesional dan praktisi industri</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h6 class="feature-title">Fasilitas Modern</h6>
+                        <p class="feature-text">Ruang kelas dan peralatan praktik yang lengkap</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h6 class="feature-title">Bantuan Penempatan Kerja</h6>
+                        <p class="feature-text">Dukungan job placement dan networking industri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2 class="cta-title">Siap Memulai Perjalanan Karir Anda?</h2>
+                    <p class="cta-text">Bergabunglah dengan ribuan alumni sukses kami dan raih kesempatan karir yang
+                        lebih baik</p>
+                    <button class="btn btn-cta-white"
+                        onclick="document.getElementById('kontak').scrollIntoView({behavior: 'smooth'})">
+                        Hubungi Kami Sekarang <i class="bi bi-telephone ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">LPK MITRA SAURI</h5>
+                    <p class="text-white-50">Lembaga Pelatihan Kerja profesional untuk pengembangan SDM berkualitas di
+                        bidang hospitality dan bahasa internasional.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Kontak Kami</h5>
+                    <div class="mb-3">
+                        <i class="bi bi-geo-alt-fill footer-icon"></i>
+                        <span class="text-white-50">Jl. Pendidikan No. 123, Medan, Sumatera Utara</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="bi bi-envelope-fill footer-icon"></i>
+                        <a href="mailto:info@mitrasauri.com" class="footer-link d-inline">info@mitrasauri.com</a>
+                    </div>
+                    <div>
+                        <i class="bi bi-telephone-fill footer-icon"></i>
+                        <a href="tel:+6261123456" class="footer-link d-inline">+62 61 123 456</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Link Cepat</h5>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#program" class="footer-link">Program Pelatihan</a>
+                    <a href="#tentang" class="footer-link">Tentang Kami</a>
+                    <a href="#galeri" class="footer-link">Galeri</a>
+                    <a href="#testimoni" class="footer-link">Testimoni</a>
+                    <a href="#kontak" class="footer-link">Kontak</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 LPK MITRA SAURI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('heroLottie'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'asset/animasi.json'
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Gallery data
+        const galleryData = [
+            {
+                img: 'https://lh3.googleusercontent.com/proxy/847sKUiJlySfwO9xdJnIpT-4XfvOS76Ej7jJMSqAx4NmSN2uMXE4ztPqyzWE49XybCqmLE9T78Wpr0TfKL6NI9KDqyfzyGLJISdhyKLqwzapPrqmtTovOXa1NDeQFjI_PdzXXvBIyh95E9K1m9fvRQ2f8WlFgk8EHjWE0g=s680-w680-h510-rw',
+                title: 'Pelatihan Perhotelan',
+                desc: 'Praktik housekeeping dan room service'
+            },
+            {
+                img: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=800&fit=crop',
+                title: 'Pelatihan Restoran',
+                desc: 'Table setting dan food service training'
+            },
+            {
+                img: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&h=800&fit=crop',
+                title: 'Bartending Class',
+                desc: 'Praktik cocktail mixing dan presentation'
+            },
+            {
+                img: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&h=800&fit=crop',
+                title: 'Kelas Bahasa',
+                desc: 'Pelatihan bahasa Inggris dan Mandarin'
+            },
+            {
+                img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&h=800&fit=crop',
+                title: 'Wisuda Peserta',
+                desc: 'Kelulusan batch ke-45'
+            },
+            {
+                img: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&h=800&fit=crop',
+                title: 'Fasilitas Training',
+                desc: 'Ruang kelas modern dan nyaman'
+            }
+        ];
+
+        // Lightbox functions
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            lightboxImg.src = galleryData[index].img;
+            lightboxCaption.textContent = galleryData[index].title + ' - ' + galleryData[index].desc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox with ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
